@@ -13,3 +13,16 @@ on the other hand ```Type``` make this easy to use.
 - Tuples, and Arrays
 - Extending Capabilities
 
+
+
+# 2. How TypeScript helps Code Quality and Project Maintainability
+
+#### Typescript is a super sate of Javascript
+Typescript is a game-changer for big projects.
+Typescript catches errors before they reach production and thats why Typescript is becoming so popular among developers. 
+## Features
+
+- Catching Errors Before Runtime
+- Improved Developer Experience
+- Real-World Impact
+
