@@ -70,8 +70,8 @@
 
   const myCar = new Car("Toyota", 2020, "Corolla");
 
-  // myCar.getInfo();
-  // myCar.getModel();
+  myCar.getInfo();
+  myCar.getModel();
 }
 
 {
@@ -114,7 +114,7 @@
     }
   }
 
-  const result = getMostExpensiveProduct(products);
+  getMostExpensiveProduct(products);
   // console.log(result);
 }
 
@@ -129,9 +129,7 @@
     Sunday,
   }
 
-  type DayType = "Weekday" | "Weekend";
-
-  function getDay(day: Day): DayType {
+  function getDayType(day: Day): string {
     switch (day) {
       case Day.Saturday:
         return "Weekend";
@@ -142,7 +140,7 @@
     }
   }
 
-  // console.log(getDay(Day.Wednesday));
+  console.log(getDayType(Day.Saturday));
 }
 
 {
@@ -158,14 +156,21 @@
     });
   }
 
-  async function runSquare(): Promise<void> {
-    try {
-      const result: number = await squareAsync(4);
-      // console.log(result);
-    } catch (error) {
-      // console.log(error);
-    }
-  }
+  squareAsync(4).then((result) => {
+    console.log(result);
+  });
 
-  runSquare();
+  squareAsync(-3).catch((err) => {
+    console.log(err);
+  });
+  // async function runSquare(): Promise<void> {
+  //   try {
+  //     const result: number = await squareAsync(-4);
+  //     console.log(result);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }
+
+  // runSquare();
 }
